@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+  }
+  
+ body {
+    background-color: #f4f4f4; /* Light grey background color */
+    color: #333; /* Dark grey text color */
+    font-family: 'Arial', sans-serif; /* Choose a suitable font family */
+    padding: 0px;
+}
+
+
+ 
+/* CSS property for header section */
+.header {
+            background-color: black;
+            padding: 5px;
+            text-align: center;
+        }
+ 
+/* CSS property for navigation menu */
+.nav_menu {
+            overflow: hidden;
+            background-color: #333;
+		}
+ 
+.nav_menu a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 16px;
+            text-decoration: none;
+        }
+ 
+.nav_menu a:hover {
+            background-color: white;
+            color: lightblue;
+        }
+ 
+
+
+/* Search Bar */
+.search-container {
+    float: right; /* Align the search container to the right */
+	padding-right: 30px;
+    display: flex; /* Use flexbox for side-by-side elements */
+}
+
+.search-container input[type=text] {
+    padding: 8px; /* Add padding to the input field */
+    margin-top: 8px; /* Add margin to separate from other elements */
+    border: none; /* Remove border */
+    font-size: 10px; /* Set font size */
+	width: 150px;
+}
+
+.search-container button {
+    padding: 8px; /* Add padding to the button */
+    margin-top: 8px; /* Add margin to separate from other elements */
+    background: #ccc; /* Set background color */
+    color: white; /* Set text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add cursor pointer on hover */
+    font-size: 10px; /* Set font size */
+	width: 80px;
+}
+
+.search-container button:hover {
+    background: #666; /* Change background color on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px ;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+	text-align: center; /* Align content horizontally */
+}
+
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2 {
+    color: #FDD017;
+}
+
+.links ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links li {
+    margin-bottom: 8px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.footer-section p, .links a, .footer-bottom {
+    color: #fff; /* Set the color for paragraphs, links, and the footer bottom */
+}
+

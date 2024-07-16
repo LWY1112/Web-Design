@@ -1,0 +1,158 @@
+/* Images */
+.img-container {
+	text-align: center;/* Center-aligns the content within its container */
+	margin-top: 20px;/* Adds 20 pixels of margin space at the top of the container */
+      }
+	  
+/* Career */
+.career-section {
+    display: flex;/* Displays the container as a flex container */
+    justify-content: space-around;/* Distributes the child elements evenly with space around them */
+}
+
+.career-item {
+    width: 30%;
+    text-align: center;
+    margin: 20px 0;
+    position: relative;/* Sets the positioning context for absolute positioning inside this element */
+}
+
+.career-item img {
+    width: 100%;
+    height: 300px;
+    transition: opacity 0.5s ease; /* Adds a smooth transition effect when opacity changes */
+}
+
+/* Hover Effect on Career Item Image */
+.career-item:hover img {
+    opacity: 0;/* Makes the image transparent when hovered over */
+}
+
+.career-description {
+	position: absolute; /* Positions the description absolutely within its container */
+    top: 50%; /* Positions the description 50% from the top of its container */
+    left: 50%; /* Positions the description 50% from the left of its container */
+    transform: translate(-50%, -50%); /* Centers the description horizontally and vertically */
+    background-color: rgba(255, 255, 255, 0.9); /* Sets the background color with some transparency */
+    padding: 20px; /* Adds padding around the description */
+    border-radius: 10px; /* Adds rounded corners to the description box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
+    opacity: 0; /* Initially hides the description */
+    transition: opacity 0.5s ease; /* Adds a smooth transition effect when opacity changes */
+}
+
+/* Hover Effect on Career Description */
+.career-item:hover .career-description {
+    opacity: 1;
+}
+
+/* Featured Devices */
+.featured-devices {
+    display: flex; /* Displays the devices in a row */
+    flex-wrap: wrap; /* Allows the devices to wrap to the next line if necessary */
+    justify-content: space-between; /* Distributes the devices with equal space between them */
+}
+
+.device {
+  background-color: #f9f9f9;
+  border-radius: 8px; /* Adds rounded corners to each device */
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a shadow effect */
+  text-align: center;
+  margin: 20px auto;
+  width: 30%; 
+	
+}
+
+.device img {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+	
+}
+
+.device p {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Hover Effect on Devices */
+.device:hover {
+    transform: scale(1.05); /* Enlarges the device slightly on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+	
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block; /* Displays the button as an inline block element */
+    padding: 10px 16px;
+    background-color: grey;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.browse-button {
+    width: 100%; /* Make the button take full width */
+    text-align: right; /* Align the button to the left */
+    margin-top: 20px; /* Add space between the last row of devices and the button */
+}
+
+		
+/* Style for the video container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio (height: 9/16 * width) */
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* Style for the embedded iframe */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+		
+.overview {
+  text-align: center;
+  padding: 50px 0; /* Add padding for spacing */
+  background-color: #f8f8f8; /* Add a background color */
+}
+
+.overview h3 {
+  font-size: 28px;
+  margin-bottom: 20px; /* Add some space below the heading */
+  color: #333; /* Set the text color */
+}
+
+.overview p {
+  font-size: 16px;
+  line-height: 1.6; /* Increase line height for better readability */
+  margin-bottom: 20px; /* Add some space below each paragraph */
+}
+
+.features-list {
+  list-style-type: none;
+  padding-left: 0;
+  background-color: #f5f5f5; /* Background color for the box */
+  border: 1px solid #ccc; /* Border around the box */
+  border-radius: 5px; /* Rounded corners for the box */
+  padding: 20px; /* Padding inside the box */
+  margin-top: 20px; /* Add some space above the box */
+}
+
+.features-list li {
+  margin-bottom: 10px; /* Add spacing between list items */
+}
+
+.features-list li strong {
+  font-weight: bold; /* Make strong text bold */
+  color: #007bff; /* Set the color for strong text */
+}

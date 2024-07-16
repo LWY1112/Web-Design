@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>Career</title>
+	<link rel = "stylesheet" href= "C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\career.css" />
+	<link rel = "stylesheet" href= "C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\Theme 1.css" />
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="header">
+        <img style = "text-align:center" src = "C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\DigiDen.png" height = "200" width = "200" alt="DigitalDen Logo">
+</div>
+
+<!-- navigation menu of website layout -->
+    <div class="nav_menu">
+		<a href="C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\Index(A1) (1).html"> Home </a>
+        <a href="C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\aboutus.html"> About Us </a>
+		<a href="C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\product-listing.html"> Featured </a>
+		<a href="C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\career.html"> Career </a>
+		<a href="C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\ConatctUs.html"> Contact Us </a>
+		<!-- Search Bar -->
+		<div class="search-container">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </div>
+    
+    
+    <div class="container">
+        <h1>Career Opportunities</h1>
+        <p>We're always looking for talented individuals to join our team!</p>
+        <p>If you're interested in pursuing a career with us, please check out our current job openings below:</p>
+        
+        <div class="job-listings">
+            <div class="job">
+                <h2>Software Engineer</h2>
+                <p>We are looking for a skilled software engineer to join our development team.</p>
+                <p><strong>Requirements:</strong> Bachelor's degree in Computer Science or related field, proficiency in JavaScript, HTML, and CSS.</p>
+                <a href="#">Apply Now</a>
+            </div>
+            
+            <div class="job">
+                <h2>Marketing Specialist</h2>
+                <p>We are seeking a marketing specialist to help promote our products and services.</p>
+                <p><strong>Requirements:</strong> Bachelor's degree in Marketing or related field, experience with social media marketing.</p>
+                <a href="#">Apply Now</a>
+            </div>
+            
+            <!-- Add more job listings here -->
+        </div>
+    </div>
+    
+        <div class="container">
+            <h2 align="center">Apply for a Position</h2>
+            <form class="form" action="submit_application.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="position">Position:</label>
+                <select id="position" name="position" required>
+                    <option value="">Select Position</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Marketing Specialist">Marketing Specialist</option>
+                    <!-- Can add more options for other positions -->
+                </select><br><br>
+                <label for="resume">Resume/CV:</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required><br><br>
+                <input type="submit" onclick="submitForm()" value="Apply">
+            </form>
+        </div>
+		
+		<script>
+		  function submitForm() {
+			alert("Form submitted!");
+		  }
+		</script>
+
+
+    
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>DigitalDen is your premier destination for all things computing. We're dedicated to providing cutting-edge technology solutions, personalized service, and an exceptional shopping experience. Explore our curated selection and join us in shaping the future of technology.</p>
+        </div>
+
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\Index(A1) (1).html">Home</a></li>
+                <li><a href="C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\product-listing.html">Features</a></li>
+                <li><a href="C:\Users\Wei Yi\MCKL-DIT\Web Design\Assignment 1\ConatctUs.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p>Email: info@example.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2024 DigitalDen. All rights reserved.
+    </div>
+</footer>
+
+  
+</body>
+</html>
