@@ -18,7 +18,7 @@ This project is a frontend-only ecommerce website selling laptops, designed usin
 
 ## View the Website
 
-You can view the live version of the website [here]([https://yourwebsite.com](https://web-design-digiden.vercel.app/)).
+You can view the live version of the website [here](https://web-design-digiden.vercel.app/).
 
 ## Usage
 
